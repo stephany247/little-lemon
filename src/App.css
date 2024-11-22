@@ -2,37 +2,209 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --yellow: #f4ce14;
+  --green: #495e57;
+  --orange: #ee9972;
+  --peach:#fbdabb;
+  --highlight-light: #edefee;
+  --highlight-dark: #333333;
+  --border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 1000px; */
+  margin: 2rem auto;
+  line-height: 1.2;
+}
+
+nav {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav img,
+footer img {
+  width: 160px;
+  height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul,
+footer ul {
+  list-style: none;
+  display: inline;
+  padding: 0 0.3rem;
+}
+
+nav li,
+footer li {
+  padding: 0 0.5rem;
+  display: inline-block;
+}
+
+nav li a,
+footer li a{
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  /* width: 65ch; */
+}
+
+article {
+  background-color: var(--green);
+  color: var(--highlight-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--yellow);
+  color: var(--highlight-dark);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 1rem;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.specials,
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#specials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.card {
+  /* display: flex; */
+  display: grid;
+  gap: 0.5rem;
+  /* grid-template-rows: ; */
+  /* flex-direction: column; */
+  background-color: var(--highlight-light);
+  border-radius: 8px;
+}
+
+.text{
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  /* max-height: 16rem; */
+  border-radius: 8px 8px 0 0;
+}
+
+.card button {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  width: 10rem;
+  padding: 0;
+  background-color: inherit;
+}
+
+.card button img {
+  width: 1rem;
+  height: auto;
+}
+
+.price span {
+  color: var(--orange);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-direction: row; */
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.image-container {
+  position: relative; /* Sets the container as the reference for positioning */
+  width: max-content; /* Adjust based on the images' size */
+}
+
+.image1 {
+  position: relative; /* The first image stays in normal flow */
+  z-index: 1; /* Ensures it is below the second image */
+}
+
+.image2 {
+  position: absolute; 
+  top: 10rem; 
+  left: -10rem;
+  z-index: 2; 
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* margin: auto; */
+  gap: 1rem;
+}
+
+.testimony {
+  padding: 0 1rem;
+}
+
+.testimony img {
+  width: 2rem;
+  height: auto;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
 }
