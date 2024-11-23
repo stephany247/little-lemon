@@ -164,20 +164,28 @@ img {
   gap: 1rem;
 }
 
+.about img {
+  width: 15rem;
+  height: auto;
+}
+
 .image-container {
   position: relative; /* Sets the container as the reference for positioning */
-  width: max-content; /* Adjust based on the images' size */
+  width: fit-content; /* Adjust based on the images' size */
+  margin: 3rem 1rem;
 }
 
 .image1 {
   position: relative; /* The first image stays in normal flow */
   z-index: 1; /* Ensures it is below the second image */
+  left: 10rem;
+  top: -3rem;
 }
 
 .image2 {
   position: absolute; 
-  top: 10rem; 
-  left: -10rem;
+  top: 3rem; 
+  left: 2rem;
   z-index: 2; 
 }
 
@@ -207,4 +215,8 @@ footer {
   /* align-items: center; */
   justify-content: center;
   gap: 2rem;
+}
+
+footer li {
+  display: block;
 }
