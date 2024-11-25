@@ -4,6 +4,8 @@ import './App.css';
 import Home from './components/Homepage';
 import Nav from './components/Nav'
 import Main from './components/Main';
+import ConfirmedBooking from "./components/ConfirmedBooking"; // The new confirmation component
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/reservations" element={<Main />} />
         {/* <Route path="/order" element={<Order />} /> */}
         {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </Router>
     </>

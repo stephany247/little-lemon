@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BookingForm({ availableTimes, onDateChange }) {
+function BookingForm({ availableTimes, onDateChange, selectedDate, onSubmit, bookings, submitForm }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
@@ -15,16 +15,35 @@ function BookingForm({ availableTimes, onDateChange }) {
   const handleOccasionChange = (e) => setOccasion(e.target.value);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent page refresh
+    e.preventDefault();
     alert(
-      `Reservation Details:\nDate: ${date || "Not selected"}\nTime: ${time || "Not selected"}\nGuests: ${guests}\nOccasion: ${occasion}`
+      `Reservation Details:\nDate: ${date || "Not selected"}\nTime: ${
+        time || "Not selected"
+      }\nGuests: ${guests}\nOccasion: ${occasion}`
     );
+    // Create form data object
+    // const formData = {
+    //   date,
+    //   time,
+    //   guests,
+    //   occasion,
+    // };
+
+    // onSubmit(formData);
+    submitForm({ date, time });
   };
+
+  // Check if the selected date and time is already booked
+  const isSlotBooked = (date, time) => {
+    if (!Array.isArray(bookings)) return false; // Safe check
+    return bookings.some((booking) => booking.date === date && booking.time === time);
+  };
+
 
   return (
     <form
-    style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
-    onSubmit={handleSubmit}
+      style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
+      onSubmit={handleSubmit}
     >
       <label htmlFor="res-date">Choose date</label>
       <input
@@ -35,14 +54,14 @@ function BookingForm({ availableTimes, onDateChange }) {
       />
       <label htmlFor="res-time">Choose time</label>
       <select id="res-time" value={time} onChange={handleTimeChange}>
-      {availableTimes.length === 0 ? (
-          <option value="">No available times</option>
-        ) : (
+        {Array.isArray(availableTimes) && availableTimes.length > 0 ? (
           availableTimes.map((time, index) => (
-            <option key={index} value={time}>
+            <option key={index} value={time} disabled={isSlotBooked(selectedDate, time)}>
               {time}
             </option>
           ))
+        ) : (
+          <option>No available times</option>
         )}
       </select>
       <label htmlFor="guests">Number of guests</label>
@@ -61,10 +80,7 @@ function BookingForm({ availableTimes, onDateChange }) {
         <option>Engagement</option>
         <option>Anniversary</option>
       </select>
-      <input
-        type="submit"
-        value="Make Your Reservation"
-      />
+      <input type="submit" value="Make Your Reservation" />
     </form>
   );
 }
