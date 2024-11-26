@@ -1,14 +1,14 @@
 import { useEffect, useReducer, useState } from "react";
 import BookingForm from "./BookingForm";
 import { fetchAPI, submitAPI } from "../scripts/Api";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 export function timesReducer(state, action) {
   switch (action.type) {
     case "UPDATE_TIMES":
       return {
         ...state,
-        availableTimes: fetchAPI(new Date(action.date)), // Use fetchAPI to get times
+        availableTimes: fetchAPI(new Date(action.date)),
       };
     default:
       return state;
@@ -19,7 +19,7 @@ export function timesReducer(state, action) {
 export function initializeTimes() {
   const today = new Date();
   return {
-    availableTimes: fetchAPI(today), // Fetch available times for today
+    availableTimes: fetchAPI(today),
   };
 }
 
@@ -27,7 +27,6 @@ function Main() {
   // Initialize the reducer
   const [state, dispatch] = useReducer(timesReducer, initializeTimes);
   const navigate = useNavigate();
-
 
   const [selectedDate, setSelectedDate] = useState("");
   // Function to handle date change and dispatch available times update
@@ -85,9 +84,7 @@ function Main() {
     <BookingForm
       availableTimes={state.availableTimes}
       onDateChange={handleDateChange}
-      // onSubmit={submitForm}
       submitForm={submitForm}
-      // bookings={bookings}
       selectedDate={selectedDate}
     />
   );
