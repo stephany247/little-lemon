@@ -1,0 +1,123 @@
+footer {
+  background-color: var(--green);
+  color: var(--highlight-light);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+footer img {
+  width: 6rem;
+  height: auto;
+  margin: auto 0;
+}
+
+footer nav {
+  display: inline-block;
+}
+
+.socials ul {
+  grid-template-columns: repeat(4, 1.5rem);
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: 1rem;
+}
+
+footer li {
+  padding: 0;
+}
+
+footer li {
+  display: block;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--highlight-light);
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+footer p {
+  color: var(--highlight-light);
+  line-height: 1;
+}
+
+footer .socials li {
+  display: inline;
+}
+
+footer .socials li a {
+  margin-right: 1.2rem;
+}
+
+.logo {
+  grid-column: auto;
+  margin-block-start: 1.5em;
+}
+
+.links {
+  grid-column: auto;
+}
+
+.contact {
+  grid-column: auto;
+}
+
+.contact ul li {
+  display: flex;
+  font-style: italic;
+}
+
+.contact ul li svg {
+  margin-right: 10px;
+  justify-content: start;
+  padding-top: 0.2rem;
+}
+
+.socials {
+  grid-column: auto;
+}
+
+.socials li a:hover,
+.socials li a:focus,
+.contact ul li svg:hover,
+.contact ul li svg:focus {
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 61.9375rem) {
+  .footer {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 48.9375rem) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 30.375rem) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}

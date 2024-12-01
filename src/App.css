@@ -1,67 +1,48 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
   --yellow: #f4ce14;
   --green: #495e57;
   --orange: #ee9972;
-  --peach:#fbdabb;
+  --peach: #fbdabb;
   --highlight-light: #edefee;
   --highlight-dark: #333333;
   --border-radius: 8px;
 }
 
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 1000px; */
-  margin: 2rem auto;
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Karla, sans-serif;
   line-height: 1.2;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav img,
-footer img {
-  width: 160px;
-  height: 60px;
-}
-
-nav ul,
-footer ul {
-  list-style: none;
-  display: inline;
-  padding: 0 0.3rem;
-}
-
-nav li,
-footer li {
-  padding: 0 0.5rem;
-  display: inline-block;
-}
-
-nav li a,
-footer li a{
-  text-decoration: none;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 61.625rem;
+  width: 100%;
 }
 
 h1 {
-  font-size: 32px;
   margin: 0;
+  font-family: Markazi Text;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -69,154 +50,8 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   /* width: 65ch; */
-}
-
-article {
-  background-color: var(--green);
-  color: var(--highlight-light);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  /* justify-content: center; */
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  gap: 1rem;
-}
-
-button {
-  background-color: var(--yellow);
-  color: var(--highlight-dark);
-  padding: 1rem 1rem;
-  border-radius: 8px;
-  border: none;
-  margin-top: 1rem;
-}
-
-img {
-  display: block;
-  width: 300px;
-  height: 300px;
-  border-radius: 16px;
-}
-
-.specials,
-.price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#specials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem auto;
-}
-
-.card {
-  /* display: flex; */
-  display: grid;
-  gap: 0.5rem;
-  /* grid-template-rows: ; */
-  /* flex-direction: column; */
-  background-color: var(--highlight-light);
-  border-radius: 8px;
-}
-
-.text{
-  padding: 1rem;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  /* max-height: 16rem; */
-  border-radius: 8px 8px 0 0;
-}
-
-.card button {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  width: 10rem;
-  padding: 0;
-  background-color: inherit;
-}
-
-.card button img {
-  width: 1rem;
-  height: auto;
-}
-
-.price span {
-  color: var(--orange);
-}
-
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* flex-direction: row; */
-  margin: 2rem auto;
-  gap: 1rem;
-}
-
-.about img {
-  width: 15rem;
-  height: auto;
-}
-
-.image-container {
-  position: relative; /* Sets the container as the reference for positioning */
-  width: fit-content; /* Adjust based on the images' size */
-  margin: 3rem 1rem;
-}
-
-.image1 {
-  position: relative; /* The first image stays in normal flow */
-  z-index: 1; /* Ensures it is below the second image */
-  left: 10rem;
-  top: -3rem;
-}
-
-.image2 {
-  position: absolute; 
-  top: 3rem; 
-  left: 2rem;
-  z-index: 2; 
-}
-
-.testimonials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* margin: auto; */
-  gap: 1rem;
-}
-
-.testimony {
-  padding: 0 1rem;
-}
-
-.testimony img {
-  width: 2rem;
-  height: auto;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  gap: 2rem;
-}
-
-footer li {
-  display: block;
+  color: var(--green);
 }
