@@ -1,7 +1,7 @@
-import customer1 from "../../../icons_assets/Mike.jpg";
-import customer2 from "../../../icons_assets/Tilly Evans.jpg";
-import customer3 from "../../../icons_assets/Chase Walker.jpg";
-import customer4 from "../../../icons_assets/Purity.jpg";
+import customer1 from "../../layout/assets/Mike.jpg";
+import customer2 from "../../layout/assets/Tilly Evans.jpg";
+import customer3 from "../../layout/assets/Chase Walker.jpg";
+import customer4 from "../../layout/assets/Purity.jpg";
 import Testimony from "./Testimony";
 import "./Testimonials.css";
 
