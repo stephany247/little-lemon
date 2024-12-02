@@ -17,7 +17,7 @@ function Hero() {
           </Link>
         </div>
         <img
-          src="./icons_assets/restauranfood.jpg"
+          src="./icons_assets/restaurant-food.jpg"
           className="hero-image"
           alt="Little Lemon meal"
         ></img>

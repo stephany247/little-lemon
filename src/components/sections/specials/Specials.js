@@ -6,7 +6,7 @@ import "./Specials.css";
 const specialsData = [
   {
     id: 1,
-    image: "./icons_assets/greek salad.jpg",
+    image: "./icons_assets/greek-salad.jpg",
     title: "Greek Salad",
     price: "12.99",
     description:
@@ -14,7 +14,7 @@ const specialsData = [
   },
   {
     id: 2,
-    image: "./icons_assets/bruchetta.svg",
+    image: "./icons_assets/bruschetta.jpg",
     title: "Bruschetta",
     price: "5.99",
     description:
