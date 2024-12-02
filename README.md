@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the Little Lemon Restaurant website, created as a capstone project for the Meta Frontend Developer Professional Certificate.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Running the Project](#running-the-project)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Little Lemon Restaurant website is a showcase project developed as part of the Meta Frontend Developer Professional Certificate. It highlights core competencies in modern frontend development, including creating visually appealing designs, crafting responsive layouts, and integrating dynamic, user-focused interactions. Built with React and other cutting-edge tools, this project emphasizes performance, usability, and seamless user experiences.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Preview
+The Little Lemon Restaurant website features a visually appealing design that is fully responsive, ensuring an optimal experience across devices. The homepage showcases a clean, user-friendly interface with an intuitive navigation bar, a dynamic hero section, and well-structured content. Key features include:
 
-### `npm run build`
+- Responsive Design: The layout adapts seamlessly across various screen sizes, ensuring it looks great on desktops, tablets, and mobile devices.
+- Interactive Elements: Users can explore restaurant services, view the menu, and make reservations with ease.
+- Modern UI/UX: The design follows current best practices, using React for smooth, dynamic interactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **Homepage**: Engaging hero section with highlights of special dishes and restaurant features.
+- **About Us**: Overview of the restaurant’s history, mission, and values.
+- **Reservations**: Easy-to-use online booking system for table reservations.
+- **Contact Information**: Address, phone, email, and an interactive map for easy access.
+- **Social Media Links**: Quick access to the restaurant’s social media pages.
+- **Responsive Design**: Optimized for seamless use across all devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- Javascript
+- React Router
+- HTML5
+- CSS3
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+To get a local copy up and running, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Make sure you have npm and node.js installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/stephany247/little-lemon.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd little-lemon
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+## Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the project locally, use the following command:
+```bash
+npm start
+```
