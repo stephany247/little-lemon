@@ -85,8 +85,7 @@
 }
 
 .card p {
-  max-height: 6rem;
-  margin-bottom: 1rem;
+  height: 7rem;
 }
 
 .card a {
@@ -142,6 +141,15 @@
     min-height: 30.25rem;
     overflow: hidden;
     gap: 1rem;
-    margin: 0 2rem;
+    margin: 0;
+  }
+
+  .card p {
+    height: auto;
+  }
+}
+@media screen and (max-width: 29.375rem) {
+  .specials {
+    flex-direction: column;
   }
 }
